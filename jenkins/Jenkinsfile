@@ -1,10 +1,10 @@
 pipeline {
     agent any
     stages {
-         stage('Check versions') {
+        stage('Test auto pulling') {
             steps {
-                sh 'mvn -v'
-                sh 'java -version'
+                echo 'Testing'
             }
         }
+    }
 }
